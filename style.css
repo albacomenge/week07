@@ -1,0 +1,107 @@
+h1 {
+  transform: translateX(-200px);
+}
+
+h2 {
+  transform: rotate(50deg) translate(100px, 100px);
+}
+
+h3 {
+}
+
+/* div {
+    background: red;
+    height: 100px;
+    width: 100px;
+    transform: translateY(50px) translateX(50px) rotateZ(45deg);
+  } */
+
+nav {
+  background-color: red;
+  height: 150px;
+  width: 400px;
+  margin: 0 auto;
+  animation-name: mentalMoves;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mentalMoves {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(150px);
+  }
+}
+
+article {
+  margin: 0 auto;
+}
+
+article img {
+  width: 250px;
+  animation-name: grumpyCat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes grumpyCat {
+  from {
+    transform: translateX(50px) scale(1) rotateZ(359deg);
+  }
+  to {
+    transform: translateX(200px) scale(2) rotateZ(0deg);
+  }
+}
+
+section {
+  background: green;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  /* transition: transform 0.3s ease-in-out; */
+  /* transition: transform 1s, background 10s; */
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+section:hover {
+  transform: scale(1.2);
+  width: 400px;
+  background: blue;
+}
+
+/* @keyframes colorChange {
+    from {
+      background-color: green;
+    }
+    to {
+      background-color: pink;
+    }
+  } */
+
+@keyframes colorChange {
+  10% {
+    background: blue;
+  }
+
+  50% {
+    background: red;
+  }
+  65% {
+    background: orange;
+  }
+
+  82% {
+    background: black;
+  }
+
+  100% {
+    background: peru;
+  }
+}
